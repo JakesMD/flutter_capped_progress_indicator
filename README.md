@@ -1,6 +1,6 @@
 A modified version of Flutter's `LinearProgressIndicator` and `CircularProgressIndicator` that allows you to change the corner radius and stroke cap.
 
-![Preview](preview.gif "preview")
+![Preview](https://raw.githubusercontent.com/JakesMD/capped_progress_indicator/main/preview.gif "preview")
 
 ## Features
 - Exactly the same features as Flutter's `LinearProgressIndicator` and `CircularProgressIndicator`.
