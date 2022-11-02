@@ -1,7 +1,8 @@
 name: capped_progress_indicator
 description: A linear and circular progress indicator with a customisable corner radius or stroke cap.
 version: 0.0.1
-homepage:
+homepage: https://github.com/JakesMD/capped_progress_indicator
+repository: https://github.com/JakesMD/capped_progress_indicator
 
 environment:
   sdk: '>=2.18.2 <3.0.0'
