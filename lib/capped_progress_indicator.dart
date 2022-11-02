@@ -45,8 +45,8 @@ const int _kIndeterminateCircularDuration = 1333 * 2222;
 
 enum _ActivityIndicatorType { material, adaptive }
 
-/// A base class for Material Design progress indicators.
-abstract class CappedProgressIndicator extends StatefulWidget {
+/// A base class for the capped progress indicators.
+abstract class _CappedProgressIndicator extends StatefulWidget {
   /// Creates a progress indicator.
   ///
   /// The [value] argument can either be null for an indeterminate
@@ -58,7 +58,7 @@ abstract class CappedProgressIndicator extends StatefulWidget {
   /// The [semanticsLabel] can be used to identify the purpose of this progress
   /// bar for screen reading software. The [semanticsValue] property may be used
   /// for determinate progress indicators to indicate how much progress has been made.
-  const CappedProgressIndicator({
+  const _CappedProgressIndicator({
     super.key,
     this.value,
     this.backgroundColor,
@@ -266,7 +266,7 @@ class _LinearCappedProgressIndicatorPainter extends CustomPainter {
 ///
 /// The minimum height of the indicator can be specified using [minHeight].
 /// The indicator can be made taller by wrapping the widget with a [SizedBox].
-class LinearCappedProgressIndicator extends CappedProgressIndicator {
+class LinearCappedProgressIndicator extends _CappedProgressIndicator {
   /// Creates a linear progress indicator.
   const LinearCappedProgressIndicator({
     super.key,
@@ -465,7 +465,7 @@ class _CircularCappedProgressIndicatorPainter extends CustomPainter {
 ///
 /// The indicator arc is displayed with [valueColor], an animated value. To
 /// specify a constant color use: `AlwaysStoppedAnimation<Color>(color)`.
-class CircularCappedProgressIndicator extends CappedProgressIndicator {
+class CircularCappedProgressIndicator extends _CappedProgressIndicator {
   /// Creates a circular progress indicator.
   const CircularCappedProgressIndicator({
     super.key,
